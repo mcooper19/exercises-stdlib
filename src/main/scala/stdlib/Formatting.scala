@@ -41,9 +41,9 @@ object Formatting extends FlatSpec with Matchers with org.scalaexercises.definit
     val f = '\\'
 
     "%c".format(c) should be(res0)
-    "%c".format(d) should be(res1)
-    "%c".format(e) should be(res2)
-    "%c".format(f) should be(res3)
+    "%d".format(d) should be(res1)
+    "%e".format(e) should be(res2)
+    "%f".format(f) should be(res3)
   }
 
   /** Formatting can also include numbers:
