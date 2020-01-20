@@ -120,7 +120,7 @@ object Implicits extends AnyFlatSpec with Matchers with org.scalaexercises.defin
     def howMuchCanIMake_?(hours: Int)(implicit dollarsPerHour: BigDecimal) =
       dollarsPerHour * hours
 
-    implicit val hourlyRate = BigDecimal(34)
+    implicit val dollarsPerHour = BigDecimal(34)
 
     howMuchCanIMake_?(30) should be(res0)
   }
